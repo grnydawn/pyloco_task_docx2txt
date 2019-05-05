@@ -17,6 +17,7 @@ Example(s)
 
 # Assuming my.docx has tables, following command extracts texts from
 # the tables of the docx file and print extracted texts on screen
+
 >>> pyloco docx2text my.docx -- print
 """
 
