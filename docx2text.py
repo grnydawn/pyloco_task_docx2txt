@@ -4,7 +4,7 @@ import docx
 from pyloco import Task
 
 class Docx2text(Task):
-    """extracts structured texts from Microsoft Word file
+    """extracts structured texts from a Microsoft Word file
 
 'docx2text' task extracts texts from a Microsoft Word file while keeping
 its original structure. For example, it outputs tables of the Word file in
@@ -15,18 +15,18 @@ of this structural information for selecting a right text in the output.
 Example(s)
 ----------
 
-# Assuming my.docx has tables, following command extracts texts from
-# the tables of the docx file and print extracted texts on screen
+Assuming my.docx has tables, following command extracts texts from
+the tables of the docx file and print extracted texts on screen
 
 >>> pyloco docx2text my.docx -- print
 """
 
-    name = "docx2text"
-    version = "0.1.0"
+    __name__ = "docx2text"
+    __version__ = "0.1.3"
 
     def __init__(self, parent):
 
-        self.add_data_argument("path", type=str, help="input MS Word file")
+        self.add_data_argument("data", type=str, help="input MS Word file")
 
         self.add_option_argument("-t", "--type", metavar="type",
                 default=["table"], action="append",
@@ -37,7 +37,7 @@ Example(s)
 
     def perform(self, targs):
 
-        docf = docx.Document(targs.path)
+        docf = docx.Document(targs.data)
         items = {}
 
         for type in targs.type:
