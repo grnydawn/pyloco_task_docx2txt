@@ -21,8 +21,8 @@ the tables of the docx file and print extracted texts on screen
 >>> pyloco docx2text my.docx -- print
 """
 
-    __name__ = "docx2text"
-    __version__ = "0.1.3"
+    _name_ = "docx2text"
+    _version_ = "0.1.3"
 
     def __init__(self, parent):
 
