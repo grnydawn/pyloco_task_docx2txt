@@ -1,6 +1,6 @@
-================
-'docx2text' task
-================
+==============================
+'docx2text' task version 0.1.3
+==============================
 
 'docx2text' task extracts texts from a Microsoft Word file while keeping
 its original structure. For example, it outputs tables of the Word file in
@@ -12,17 +12,17 @@ Installation
 ------------
 
 Before installing 'docx2text' task, please make sure that 'pyloco' is installed.
-Run the following command if you need to install 'pyloco'.
+Run the following command if you need to install 'pyloco'. ::
 
->>> pip install pyloco
+    >>> pip install pyloco
 
-Or, if 'pyloco' is already installed, upgrade 'pyloco' with the following command
+Or, if 'pyloco' is already installed, upgrade 'pyloco' with the following command ::
 
->>> pip install -U pyloco
+    >>> pip install -U pyloco
 
-To install 'docx2text' task, run the following 'pyloco' command.
+To install 'docx2text' task, run the following 'pyloco' command.  ::
 
->>> pyloco install docx2text
+    >>> pyloco install docx2text
 
 Command-line syntax
 -------------------
